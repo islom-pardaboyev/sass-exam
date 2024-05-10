@@ -20,13 +20,20 @@
   --orange: #FF9619;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 img {
-  max-width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -80,6 +87,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  #hero .hero-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
 #hero .hero-wrapper .hero-texts h1 {
   font-family: var(--exo2), sans-serif;
   font-weight: 600;
@@ -118,16 +132,22 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: auto auto auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#hero .hero-bottom .center-item {
-  border-left: 1px solid var(--gray4);
-  border-right: 1px solid var(--gray4);
-  padding-left: 64px;
-  padding-right: 121px;
+@media (max-width: 768px) {
+  #hero .hero-bottom {
+    grid-template-columns: auto;
+    gap: 30px;
+    text-align: center;
+  }
 }
 #hero .hero-bottom .bottom-item {
   display: flex;
   flex-direction: column;
   max-width: 228px;
+}
+@media (max-width: 768px) {
+  #hero .hero-bottom .bottom-item {
+    margin: auto;
+  }
 }
 #hero .hero-bottom .bottom-item h3 {
   margin-top: 24px;
@@ -143,6 +163,11 @@ h1, h2, h3, h4, h5, h6 {
   width: fit-content;
   padding: 23px;
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  #hero .hero-bottom .bottom-item .img-wrapper {
+    margin: auto;
+  }
 }
 
 #about {
@@ -490,6 +515,9 @@ h1, h2, h3, h4, h5, h6 {
   gap: 15px;
 }
 #footer .icons-butoon button {
+  border: none;
+}
+#footer .icons-butoon button a {
   background-color: var(--orange);
   border: none;
   color: #fff;

@@ -1,0 +1,31 @@
+#believe-us{
+    margin-top: 123px;
+    margin-bottom: 130px;
+
+    & .container h1{
+        margin-bottom: 100px;
+    }
+
+    & .logos-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .logo{
+            text-align: center;
+            border-left: 1px solid var(--gray2);
+            padding: 0 73px;
+
+            & h3{
+                font-weight: 600;
+                font-size: 20px;
+                margin-top: 32px;
+                margin-bottom: 14px;
+            }
+
+            & p{
+                font-size: 14px;
+            }
+        }
+    }
+}

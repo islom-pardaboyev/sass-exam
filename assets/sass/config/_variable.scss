@@ -1,0 +1,81 @@
+// font family
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+   --exo2: 'Exo 2';
+   --ptSans: 'PT Sans';
+   --groteks: "Familjen Grotesk";
+   --open-sans: "Open Sans";
+}
+
+// colors
+:root{
+    --yellow: #FFCE50;
+    --white: #fff;
+    --dark: #363738; 
+    --green: #0B7572;
+    --gray: #0B7572;
+    --gray2: #e9e9ec;
+    --gray3: #6B6B6C;
+    --gray4: #d7d7d7;
+    --gray5: #F9F9FB;
+    --gray6: #E9EAF2;
+    --orange: #FF9619;
+}
+
+// some default variables
+body{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: fit-content;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: var(--gray3);
+    font-family: var(--ptSans), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--dark);
+    font-family: var(--exo2);
+}
+
+.bg-img-padding{
+    padding: 14px 20px;
+    border-radius: 50%;
+    width: fit-content;
+    background-color: var(--gray2);
+}
+
+.section-padding{
+    padding: 0 100px;
+
+    @media (max-width: 768px) {
+        padding: 0 30px;
+    }
+}
+
+.heading{
+    font-family: var(--exo2), sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 65px;
+    
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
