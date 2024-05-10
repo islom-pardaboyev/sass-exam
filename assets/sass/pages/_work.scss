@@ -25,9 +25,12 @@
             gap: 30px;
             justify-content: space-between;
 
+
             @media (max-width: 768px) {
-                
+                flex-direction: column;   
+                margin: 0 auto;
             }
+
 
             & .img-section{
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);

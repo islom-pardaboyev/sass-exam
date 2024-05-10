@@ -78,6 +78,12 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1400px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
 
 #hero {
   margin-top: 109px;
@@ -197,6 +203,11 @@ h1, h2, h3, h4, h5, h6 {
   gap: 40px;
   align-items: center;
 }
+@media (max-width: 76px) {
+  #about .about-wrapper .about-item .items {
+    flex-direction: column;
+  }
+}
 #about .about-wrapper .about-item .items .about-text {
   display: flex;
   flex-direction: column;
@@ -246,6 +257,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 30px;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  #work .work-wrapper .imgs-wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 #work .work-wrapper .imgs-wrapper .img-section {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
@@ -307,6 +324,11 @@ h1, h2, h3, h4, h5, h6 {
   gap: 56px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1215686275);
 }
+@media (max-width: 768px) {
+  #postavki .postavki-wrapper .project-wrapper .project-item img {
+    display: none;
+  }
+}
 #postavki .postavki-wrapper .project-wrapper .project-item .project-texts {
   display: flex;
   flex-direction: column;
@@ -363,6 +385,12 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: auto auto;
   gap: 30px;
+}
+@media (max-width: 768px) {
+  #company .company-wrapper {
+    grid-template-columns: auto;
+    margin: 0 auto;
+  }
 }
 #company .company-item {
   border-radius: 10px;
@@ -423,6 +451,12 @@ h1, h2, h3, h4, h5, h6 {
 #contact .contact-container {
   display: flex;
 }
+@media (max-width: 768px) {
+  #contact .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 #contact .contact-container .contact-info {
   background: var(--gray5);
   padding: 40px 48px;
@@ -436,6 +470,12 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   border-bottom: 1px solid var(--gray6);
   padding-bottom: 16px;
+}
+@media (max-width: 768px) {
+  #contact .contact-container .contact-info .info-item {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 #contact .contact-container .contact-info .info-item P {
   font-size: 16px;
@@ -477,6 +517,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 59px;
   padding-bottom: 80px;
 }
+@media (max-width: 768px) {
+  #footer .footer-wrapper .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 #footer .footer-wrapper .footer-top h1 a {
   color: #fff;
   text-transform: uppercase;
@@ -510,12 +556,25 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  #footer .icons-butoon {
+    margin: 0 auto;
+    gap: 50px;
+  }
+}
 #footer .icons-butoon .icons {
   display: flex;
   gap: 15px;
 }
 #footer .icons-butoon button {
   border: none;
+}
+@media (max-width: 768px) {
+  #footer .icons-butoon button {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
 }
 #footer .icons-butoon button a {
   background-color: var(--orange);

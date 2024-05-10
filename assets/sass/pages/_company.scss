@@ -9,6 +9,12 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 30px;
+
+
+        @media (max-width: 768px) {
+         grid-template-columns: auto;
+         margin: 0 auto;
+        }
     }
 
     & .company-item{

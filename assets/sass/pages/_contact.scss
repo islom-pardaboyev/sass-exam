@@ -1,24 +1,29 @@
-#contact{
+#contact {
     display: flex;
     flex-direction: column;
     gap: 46px;
     margin-bottom: 168px;
 
     & .container {
-        h1{
+        h1 {
             margin-bottom: 96px;
         }
 
-        & > img{
+        &>img {
             margin-top: 46px;
         }
     }
 
-    & .contact-container{
+    & .contact-container {
         display: flex;
-        
 
-        & .contact-info{
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        & .contact-info {
             background: var(--gray5);
             padding: 40px 48px;
             width: 100%;
@@ -26,18 +31,25 @@
             flex-direction: column;
             gap: 32px;
 
-            & .info-item{
+            & .info-item {
                 display: flex;
                 justify-content: space-between;
                 border-bottom: 1px solid var(--gray6);
                 padding-bottom: 16px;
 
-                & P{
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 30px;
+                }
+
+
+                & P {
                     font-size: 16px;
                     font-weight: 400;
                 }
 
-                & h4{
+                & h4 {
                     font-size: 16px;
                     max-width: 443px;
                 }
@@ -45,22 +57,22 @@
         }
     }
 
-    & .contact-items{
+    & .contact-items {
         display: flex;
         flex-direction: column;
         gap: 40px;
         width: 100%;
 
-        & .contact-item{
+        & .contact-item {
             display: flex;
             width: fit-content;
             gap: 30px;
-    
-            & p{
+
+            & p {
                 font-size: 14px;
             }
-    
-            & h3{
+
+            & h3 {
                 font-size: 20px;
                 font-weight: 600;
             }
